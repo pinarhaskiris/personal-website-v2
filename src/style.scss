@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.about_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20vh;
+
+    img {
+        width: 350px;
+    }
+
+    div {
+        margin-left: 30px;
+        width: 500px;
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+    
+            li {
+                font-size: 18px;
+                font-weight: 300;
+                padding: 5px;
+            }
+        }
+    }
+    
+}
+
+.projects_container {
+    margin-top: 25vh;
+    h1 {
+        text-align: center;
+    }
+}
+
+.project_list {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 75px;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 75px;
+
+    img {
+        width: 300px;
+        margin-right: 50px;
+    }
+
+    div {
+        width: 25vw;
+    }
+
+    p {
+        font-weight: 300;
+        line-height: 24px;
+    }
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 60px;
+}
+
+.navItem {
+    padding: 30px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    a {
+        right: 20px;
+        position: relative;
+        font-size: 2em;
+        font-weight: 600;
+        color: #333;
+        text-decoration: none;
+
+        /* Navigation item underline animation */
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 4px;
+            bottom: 0;
+            left: 0;
+            background-color: #333;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover:before {
+            visibility: visible;
+            width: 100%;
+        }
+    }
+}
