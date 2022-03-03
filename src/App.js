@@ -53,6 +53,21 @@ function App() {
 
         </div>
       </div>
+
+      <div className="resume_container">
+
+      </div>
+
+      <div className="archive_container">
+
+      </div>
+
+      <div className="art_container">
+
+      </div>
+
+      <div className="contact_container">
+      </div>
       
     </div>
   );
