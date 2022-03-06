@@ -6,6 +6,10 @@ import email_client from "./images/email_client.png";
 import senior_design_project from "./images/senior_design_project.png";
 import portrait from "./images/portrait.png";
 
+import resume_ss from "./images/resume_ss.png";
+import { BsDownload } from 'react-icons/bs';
+import { BsBoxArrowUpRight } from 'react-icons/bs';
+
 function App() {
   return (
     <div className="App">
@@ -30,24 +34,25 @@ function App() {
         
           <Project img={ senior_design_project }
             title="Senior Design Project I"
-            description="Three machine learning algorithms (Naive Bayes, SVM, Random Forest) was used in hate-speech recognition. 
-            90% accuracy was obtained with SVM. 
-            Steps included preparing the data, training the models and evaluating their results.
-            Second part of the project aims to use deep learning models to achieve higher accuracy."
+            description={["Three machine learning algorithms (Naive Bayes, SVM, Random Forest) was used in hate-speech recognition.", 
+            "90% accuracy was obtained with SVM.",
+            "Steps included preparing the data, training the models and evaluating their results.",
+            "Second part of the project aims to use deep learning models to achieve higher accuracy."]}
             tags={["Python", "Machine Learning", "Classification"]}
             githubLink="https://github.com/pinarhaskiris/hate-speech-recognizer"
           />
 
           <Project img={ annie }
             title="Annie"
-            description="A front-end Named-Entity annotation tool. Build for annotating with Person, Location and Organization tags. 
-            Users can import the text as .txt file, annotate using the tool and export the annotations with BIO tags included."
+            description={["A front-end Named-Entity annotation tool. Build for annotating with Person, Location and Organization tags.", 
+            "Users can import the text as .txt file, annotate using the tool and export the annotations with BIO tags included."]}
             tags={["HTML", "CSS", "React.js"]}
             githubLink="https://github.com/pinarhaskiris/annie"/>
 
           <Project img={ email_client }
             title="Mail Client"
-            description="A front-end website for an email client that makes API calls to send and receive emails. Users can send, receive, archive and respond to emails."
+            description={["A front-end website for an email client that makes API calls to send and receive emails.",
+            "Users can send, receive, archive and respond to emails."]}
             tags={["HTML", "CSS", "JavaScript", "API calls", "Django"]}
             githubLink="https://github.com/pinarhaskiris/mail-proj"/>
 
@@ -55,6 +60,12 @@ function App() {
       </div>
 
       <div className="resume_container">
+        <img src={resume_ss} />
+        <div className="links">
+          <a href="/files/Resume.pdf" target="_blank">Open in new tab <BsBoxArrowUpRight style={{ paddingLeft: '10px' }} /></a>
+          <a href="/files/Resume.pdf" target="_blank" download>Download in PDF <BsDownload style={{ paddingLeft: '10px' }} /></a>
+
+        </div>
 
       </div>
 
