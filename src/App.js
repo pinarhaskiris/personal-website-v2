@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
+import ArchiveItem from "./components/ArchiveItem";
 
 import annie from "./images/annie.png";
 import email_client from "./images/email_client.png";
@@ -60,17 +61,33 @@ function App() {
       </div>
 
       <div className="resume_container">
-        <img src={resume_ss} />
-        <div className="links">
-          <a href="/files/Resume.pdf" target="_blank">Open in new tab <BsBoxArrowUpRight style={{ paddingLeft: '10px' }} /></a>
-          <a href="/files/Resume.pdf" target="_blank" download>Download in PDF <BsDownload style={{ paddingLeft: '10px' }} /></a>
-
+        <h1>Resume</h1>
+        <div>
+          <img src={resume_ss} />
+          <div className="links">
+            <a href="/files/Resume.pdf" target="_blank">Open in new tab <BsBoxArrowUpRight style={{ paddingLeft: '10px' }} /></a>
+            <a href="/files/Resume.pdf" target="_blank" download>Download in PDF <BsDownload style={{ paddingLeft: '10px' }} /></a>
+          </div>
         </div>
-
       </div>
 
       <div className="archive_container">
+        <h1>Archive</h1>
+        <div className="archive_list">
+          <ArchiveItem title="cute-dark" description="A dark theme for VS Code. Made purely for fun."
+          githubLink="https://github.com/pinarhaskiris/cute-dark"/>
 
+          <ArchiveItem title="Text Decryptor" 
+          description="The grammar and regex rules used to generate and encrypt the text is known. The program decryptes the file by applying regex rules reversely and removing the sentences that can not be generated with the given grammar rules."
+          tags={["Java", "Automata Theory and Formal Languages"]} githubLink="https://github.com/pinarhaskiris/COMP321-Assignment"/>
+
+          <ArchiveItem title="Number Recognizer" description="This program takes an image as input, draws red rectangles around the numbers it recognizes and writes the recognized number on top of it. OpenCV was not used, calculations were done manually."
+          tags={["Python", "Computer Vision"]} githubLink="https://github.com/pinarhaskiris/Programming-Studio-Project"/>
+
+          <ArchiveItem title="Commerce" description="This is an eBay-like e-commerce auction site that allows users to post auction listings, place bids on listings, comment on those listings and add listings to a 'watchlist'. Made to practice using Django models, migrations and user authentication."
+          tags={["HTML", "CSS", "Django"]} githubLink="https://github.com/pinarhaskiris/commerce-proj"/>
+
+        </div>
       </div>
 
       <div className="art_container">
