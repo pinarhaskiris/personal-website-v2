@@ -91,7 +91,7 @@ function App() {
       </div>
 
       <div className="art_container">
-
+        <h1>Art</h1>
       </div>
 
       <div className="contact_container">
