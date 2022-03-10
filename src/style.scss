@@ -248,3 +248,25 @@ body {
     }
 
 }
+
+.art_container {
+    .art_item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        padding: 20px;
+
+        img {
+            width: 30vw;
+        }
+        
+        div {
+            width: 25vw;
+            text-align: justify;
+            margin-left: 50px;
+        }
+    }
+}
