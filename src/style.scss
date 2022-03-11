@@ -250,23 +250,28 @@ body {
 }
 
 .art_container {
-    .art_item {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+    div {
+        width: 70vw;
+        height: max-content;
+        outline: none;
 
-        padding: 20px;
+        .art_item {
+            padding: 20px;
+            display: flex!important;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+    
+            img {
+                width: 30vw;
+            }
+            
+            div {
+                width: 25vw;
+                text-align: justify;
+                margin-left: 50px;
+            }
 
-        img {
-            width: 30vw;
-        }
-        
-        div {
-            width: 25vw;
-            text-align: justify;
-            margin-left: 50px;
         }
     }
 }

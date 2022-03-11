@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
 import ArchiveItem from "./components/ArchiveItem";
-import ArtItem from "./components/ArtItem";
+import SimpleSlider from "./components/SimpleSlider";
 
 import annie from "./images/annie.png";
 import email_client from "./images/email_client.png";
@@ -11,10 +11,6 @@ import portrait from "./images/portrait.png";
 import resume_ss from "./images/resume_ss.png";
 import { BsDownload } from 'react-icons/bs';
 import { BsBoxArrowUpRight } from 'react-icons/bs';
-
-import art1 from "./images/art1.png";
-import art2 from "./images/art2.png";
-import art3 from "./images/art3.png";
 
 function App() {
   return (
@@ -97,19 +93,10 @@ function App() {
 
       <div className="art_container">
         <h1>Art</h1>
-        <div className="art_list">
-          <ArtItem img={ art1 } title="A Lady" description="One of the first times trying to incorporate outlines to characters."
-          date="7th of January 2021"/>
-
-          <ArtItem img={ art2 } title="Sick and Tired" description="A quick sketch displaying the general mood that most -if not all- people are in during the Covid-19 pandemic. 
-          This was drawn after more than a year had passed since the pandemic started. As time went by, the line between work and personal life became more blurry which led to the inability to have a proper work-life balan- ce and horrible sleep schedules. 
-          Days started to look more like each other and the motivation to do things slowly faded. Many people, myself inc- luded, are feeling this daily, weird tiredness."
-          date="" />
-
-          <ArtItem img={ art3 } title="A 19th Century Gentleman" description="A gentleman I tried to draw give a low-key Rembrandt vibe. 
-          The colors of the background, the hair, and the accessories were chosen with Rembrandt’s style in mind." date="18th of September 2020" />
-
+        <div>
+          <SimpleSlider />
         </div>
+        
       </div>
 
       <div className="contact_container">
