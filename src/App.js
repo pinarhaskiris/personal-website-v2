@@ -9,8 +9,7 @@ import senior_design_project from "./images/senior_design_project.png";
 import portrait from "./images/portrait.png";
 
 import resume_ss from "./images/resume_ss.png";
-import { BsDownload } from 'react-icons/bs';
-import { BsBoxArrowUpRight } from 'react-icons/bs';
+import { BsDownload, BsBoxArrowUpRight, BsGithub, BsMailbox } from 'react-icons/bs';
 
 function App() {
   return (
@@ -100,6 +99,11 @@ function App() {
       </div>
 
       <div className="contact_container">
+      <h1>Contact</h1>
+      <ul>
+        <li><BsGithub /> <a href="https://github.com/pinarhaskiris" target="_blank">pinarhaskiris</a></li>
+        <li><BsMailbox /> <a href="mailto: pinarhaskiris1900@gmail.com">pinarhaskiris1900@gmail.com</a></li>
+      </ul>
       </div>
       
     </div>

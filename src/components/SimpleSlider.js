@@ -29,7 +29,7 @@ export default function SimpleSlider() {
             </div>
 
             <div className="art_item">
-                <img src={ art2 } />
+                <img src={ art3 } />
                 <div>
                     <h3>Sick and Tired</h3>
                     <p>A quick sketch displaying the general mood that most -if not all- people are in during the Covid-19 pandemic. 
@@ -40,7 +40,7 @@ export default function SimpleSlider() {
             </div>
 
             <div className="art_item">
-                <img src={ art3 } />
+                <img src={ art2 } />
                 <div>
                     <h3>A 19th Century Gentleman</h3>
                     <p>A gentleman I tried to draw give a low-key Rembrandt vibe. 

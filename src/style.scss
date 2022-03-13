@@ -250,6 +250,14 @@ body {
 }
 
 .art_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        margin-top: 25vh;
+    }
     div {
         width: 70vw;
         height: max-content;
@@ -261,6 +269,8 @@ body {
             flex-direction: row;
             align-items: center;
             justify-content: center;
+
+            height: 600px!important;
     
             img {
                 width: 30vw;
@@ -274,4 +284,14 @@ body {
 
         }
     }
+}
+
+// Slider
+.slick-dots li button:before {
+    font-size: 15px!important;
+}
+
+.slick-slider button:before {
+    color: #333;
+    font-size: 20px;
 }
