@@ -1,3 +1,5 @@
+import React, {useState} from "react";
+
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
 import ArchiveItem from "./components/ArchiveItem";
@@ -11,10 +13,26 @@ import portrait from "./images/portrait.png";
 import resume_ss from "./images/resume_ss.png";
 import { BsDownload, BsBoxArrowUpRight, BsGithub, BsMailbox } from 'react-icons/bs';
 
-function App() {
-  return (
-    <div className="App">
+import useDarkMode from 'use-dark-mode';
+import DarkModeToggle from "react-dark-mode-toggle";
 
+function App() {
+  const darkMode = useDarkMode(false);
+
+  return (
+    
+    <div className="App">
+    <div id="dark_mode_toggle_btn">
+
+      <DarkModeToggle 
+        onChange={darkMode.toggle}
+        checked={darkMode.value}
+        size={80}
+      />
+
+    </div>
+      
+      
       <div id="about_container">
         <img src={portrait}/>
         <div>

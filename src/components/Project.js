@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import { BsGithub } from 'react-icons/bs';
 
 const Project = ({ title, description, tags, githubLink, img }) => {
