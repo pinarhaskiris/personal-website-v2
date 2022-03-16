@@ -33,8 +33,8 @@ export default function SimpleSlider() {
                 <div>
                     <h3>Sick and Tired</h3>
                     <p>A quick sketch displaying the general mood that most -if not all- people are in during the Covid-19 pandemic. 
-                    This was drawn after more than a year had passed since the pandemic started. As time went by, the line between work and personal life became more blurry which led to the inability to have a proper work-life balan- ce and horrible sleep schedules. 
-                    Days started to look more like each other and the motivation to do things slowly faded. Many people, myself inc- luded, are feeling this daily, weird tiredness.</p>
+                    This was drawn after more than a year had passed since the pandemic started. As time went by, the line between work and personal life became more blurry which led to the inability to have a proper work-life balance and horrible sleep schedules. 
+                    Days started to look more like each other and the motivation to do things slowly faded. Many people, myself included, are feeling this daily, weird tiredness.</p>
                     <p></p>
                 </div>
             </div>
