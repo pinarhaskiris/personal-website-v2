@@ -1,3 +1,5 @@
+import { BsGithub } from 'react-icons/bs';
+
 const ArchiveItem = ({ title, description, tags = [], githubLink }) => {
 
     const tag_list = tags.map((tag, index) =>
@@ -11,7 +13,7 @@ const ArchiveItem = ({ title, description, tags = [], githubLink }) => {
             <ul className="tag_list">
                 { tag_list }
             </ul>
-            <a href={ githubLink }>github</a>
+            <a href={ githubLink }><BsGithub size={20}/></a>
         </div>
     )
 }

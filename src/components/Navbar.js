@@ -9,11 +9,11 @@ import contact from "../images/contact.png";
 const Navbar = () => {
   return (
     <div className="navbar">
-        <NavItem title="Projects" />
-        <NavItem title="Resume" />
-        <NavItem title="Archive" />
-        <NavItem title="Art" />
-        <NavItem title="Contact" />
+        <NavItem title="Projects" to="projects_container" />
+        <NavItem title="Resume" to="resume_container" />
+        <NavItem title="Archive" to="archive_container" />
+        <NavItem title="Art" to="archive_container" />
+        <NavItem title="Contact" to="contact_container" />
     </div>
   );
 };

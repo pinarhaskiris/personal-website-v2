@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
 
-      <div className="about_container">
+      <div id="about_container">
         <img src={portrait}/>
         <div>
         <h1>Pınar Haskırış</h1>
@@ -29,7 +29,7 @@ function App() {
       </div>
       <Navbar />
 
-      <div className="projects_container">
+      <div id="projects_container">
         <h1>Projects</h1>
         <div className="project_list">
         
@@ -60,7 +60,7 @@ function App() {
         </div>
       </div>
 
-      <div className="resume_container">
+      <div id="resume_container">
         <h1>Resume</h1>
         <div>
           <img src={resume_ss} />
@@ -71,7 +71,7 @@ function App() {
         </div>
       </div>
 
-      <div className="archive_container">
+      <div id="archive_container">
         <h1>Archive</h1>
         <div className="archive_list">
           <ArchiveItem title="cute-dark" description="A dark theme for VS Code. Made purely for fun."
@@ -87,10 +87,13 @@ function App() {
           <ArchiveItem title="Commerce" description="This is an eBay-like e-commerce auction site that allows users to post auction listings, place bids on listings, comment on those listings and add listings to a 'watchlist'. Made to practice using Django models, migrations and user authentication."
           tags={["HTML", "CSS", "Django"]} githubLink="https://github.com/pinarhaskiris/commerce-proj"/>
 
+          <ArchiveItem title="First Personal Website" description="First iteration of this website and the first project done using React.js."
+          tags={["HTML", "CSS", "React.js"]} githubLink="https://github.com/pinarhaskiris/personal-website"/>
+
         </div>
       </div>
 
-      <div className="art_container">
+      <div id="art_container">
         <h1>Art</h1>
         <div>
           <SimpleSlider />
@@ -98,10 +101,10 @@ function App() {
         
       </div>
 
-      <div className="contact_container">
+      <div id="contact_container">
       <h1>Contact</h1>
       <ul>
-        <li><BsGithub /> <a href="https://github.com/pinarhaskiris" target="_blank">pinarhaskiris</a></li>
+        <li><BsGithub /> <a href="https://github.com/pinarhaskiris" target="_blank">GitHub <BsBoxArrowUpRight size={20} style={{ paddingLeft: '5px' }} /></a></li>
         <li><BsMailbox /> <a href="mailto: pinarhaskiris1900@gmail.com">pinarhaskiris1900@gmail.com</a></li>
       </ul>
       </div>

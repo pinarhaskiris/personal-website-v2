@@ -1,7 +1,9 @@
-const NavItem = ({ title }) => {
+import {Link} from 'react-scroll'
+
+const NavItem = ({ title, to }) => {
   return (
     <div className="navItem">
-        <a href="#">{ title }</a>
+        <Link  to={ to } spy={true} smooth={true}> { title }</Link>
     </div>
   );
 };
