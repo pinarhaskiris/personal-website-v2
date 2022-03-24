@@ -1,7 +1,9 @@
 import React, { Component }  from 'react';
-import { BsGithub } from 'react-icons/bs';
+import { BsGithub, BsGlobe } from 'react-icons/bs';
+import { Tooltip } from '@mui/material';
 
-const ArchiveItem = ({ title, description, tags = [], githubLink }) => {
+
+const ArchiveItem = ({ title, description, tags = [], githubLink, liveLink }) => {
 
     const tag_list = tags.map((tag, index) =>
         <li key={index}>{tag}</li>
@@ -14,7 +16,10 @@ const ArchiveItem = ({ title, description, tags = [], githubLink }) => {
             <ul className="tag_list">
                 { tag_list }
             </ul>
-            <a href={ githubLink }><BsGithub size={20}/></a>
+            <div>
+                <Tooltip title="GitHub" arrow placement="top">{<a href={ githubLink }><BsGithub size={20}/></a>}</Tooltip>
+                {liveLink ? <Tooltip arrow title="Live" placement="top">{<a href={ liveLink }><BsGlobe size={20} /></a>}</Tooltip>: null}
+            </div>
         </div>
     )
 }

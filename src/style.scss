@@ -32,7 +32,6 @@
     }
 }
 
-
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
     background-color: #fff;
@@ -42,11 +41,49 @@ body.light-mode {
     background-color: #fff;
     color: #333;
     transition: background-color 0.3s ease;
-  }
-  body.dark-mode {
+}
+body.dark-mode {
     background-color: #1a1919;
     color: #999;
-  }
+
+    a {
+        color: #999!important;
+        &:before {
+            background-color: #999!important;
+        }
+    }
+
+    svg {
+        color: #999;
+    }
+
+    .links {
+        a {
+            color: #999!important;
+            border-color: #999!important;
+            background-color: transparent!important;
+
+            &:hover {
+                background-color: #999!important;
+                color: #333!important;
+                border-color: #333!important;
+
+                svg {
+                    fill: #000;
+                }
+            }
+        }
+    }
+
+    .slick-slider button:before {
+        color: #999;
+    }
+
+    .slick-dots li button:before {
+        color: #999;
+    }
+}
+
 
 #dark_mode_toggle_btn {
     margin-top: 15vh;
@@ -85,6 +122,12 @@ body.light-mode {
                 font-size: 18px;
                 font-weight: 300;
                 padding: 5px;
+
+                a {
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: #333;
+                }
             }
         }
     }
@@ -92,8 +135,9 @@ body.light-mode {
 }
 
 #projects_container {
-    margin-top: 25vh;
+    margin-top: 15vh;
     h1 {
+        padding-top: 10vh;
         text-align: center;
     }
 }
@@ -121,14 +165,18 @@ body.light-mode {
 
     h2 {
 
-
         a {
             color: #333;
-            margin-left: 20px;
             position: relative;
             padding: 3px;
             top: 2px;
+            margin-left: 5px;
             @include link;
+
+            &:first-of-type {
+                margin-left: 20px;
+            }
+
         }
     }
 
@@ -200,7 +248,8 @@ body.light-mode {
 
 #resume_container {
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 5vh;
+    padding-top: 10vh;
 
     div {
         margin-top: 75px; 
@@ -249,6 +298,7 @@ body.light-mode {
 
     h1 {
         margin-bottom: 75px;
+        padding-top: 10vh;
     }
     
     div {
@@ -291,12 +341,18 @@ body.light-mode {
                 }
             }
 
-            a {
+            div {
                 margin: 0px 30px;
-                padding-bottom: 5px;
-                color: #333;
-                position: relative;
-                @include link;
+                width: 100px;
+
+                a {
+                    padding: 5px 0px;
+                    margin-left: 10px;
+                    color: #333;
+                    position: relative;
+                    @include link;
+                }
+
             }
         }
     }
@@ -308,10 +364,8 @@ body.light-mode {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 20vh;
 
-    h1 {
-        margin-top: 20vh;
-    }
     div {
         width: 70vw;
         height: max-content;
@@ -353,9 +407,7 @@ body.light-mode {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     height: 110vh;
-
 
     ul {
         list-style: none;

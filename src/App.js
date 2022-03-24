@@ -32,14 +32,13 @@ function App() {
 
     </div>
       
-      
       <div id="about_container">
         <img src={portrait}/>
         <div>
         <h1>Pınar Haskırış</h1>
           <ul>
             <li>👩🏻‍💻 A 21 year-old computer engineering student from Istanbul. </li>
-            <li>☺️ Interning at sociality.io as a front-end developer since August, 2021.</li>
+            <li>☺️ Interning at <a href="https://sociality.io" target="_blank">Sociality.io</a> as a front-end developer since August, 2021.</li>
             <li>🧠 Currently working on using deep learning models for hate-speech recognition for my senior design project.</li>
             <li>🎨 Interested in art and languages outside of engineering.</li>
           </ul>
@@ -66,7 +65,8 @@ function App() {
             description={["A front-end Named-Entity annotation tool. Build for annotating with Person, Location and Organization tags.", 
             "Users can import the text as .txt file, annotate using the tool and export the annotations with BIO tags included."]}
             tags={["HTML", "CSS", "React.js"]}
-            githubLink="https://github.com/pinarhaskiris/annie"/>
+            githubLink="https://github.com/pinarhaskiris/annie"
+            liveLink="https://pinarhaskiris.github.io/annie/"/>
 
           <Project img={ email_client }
             title="Mail Client"
@@ -93,7 +93,8 @@ function App() {
         <h1>Archive</h1>
         <div className="archive_list">
           <ArchiveItem title="cute-dark" description="A dark theme for VS Code. Made purely for fun."
-          githubLink="https://github.com/pinarhaskiris/cute-dark"/>
+          githubLink="https://github.com/pinarhaskiris/cute-dark"
+          liveLink="https://marketplace.visualstudio.com/items?itemName=pinarhaskiris.cute-dark"/>
 
           <ArchiveItem title="Text Decryptor" 
           description="The grammar and regex rules used to generate and encrypt the text is known. The program decryptes the file by applying regex rules reversely and removing the sentences that can not be generated with the given grammar rules."
@@ -106,7 +107,8 @@ function App() {
           tags={["HTML", "CSS", "Django"]} githubLink="https://github.com/pinarhaskiris/commerce-proj"/>
 
           <ArchiveItem title="First Personal Website" description="First iteration of this website and the first project done using React.js."
-          tags={["HTML", "CSS", "React.js"]} githubLink="https://github.com/pinarhaskiris/personal-website"/>
+          tags={["HTML", "CSS", "React.js"]} githubLink="https://github.com/pinarhaskiris/personal-website"
+          liveLink="https://pinarhaskiris.github.io/personal-website/"/>
 
         </div>
       </div>
