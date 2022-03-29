@@ -78,6 +78,33 @@ function App() {
         </div>
       </div>
 
+        <div id="archive_container">
+          <h1>Other Notable Projects</h1>
+          <div className="archive_list">
+            <ArchiveItem title="cute-dark" description="A dark theme for VS Code. Made purely for fun."
+            githubLink="https://github.com/pinarhaskiris/cute-dark"
+            liveLink="https://marketplace.visualstudio.com/items?itemName=pinarhaskiris.cute-dark"/>
+
+            <ArchiveItem title="Text Decryptor" 
+            description="The grammar and regex rules used to generate and encrypt the text is known. The program decryptes the file by applying regex rules reversely and removing the sentences that can not be generated with the given grammar rules."
+            tags={["Java", "Automata Theory and Formal Languages"]} githubLink="https://github.com/pinarhaskiris/COMP321-Assignment"/>
+
+            <ArchiveItem title="Number Recognizer" description="This program takes an image as input, draws red rectangles around the numbers it recognizes and writes the recognized number on top of it. OpenCV was not used, calculations were done manually."
+            tags={["Python", "Computer Vision"]} githubLink="https://github.com/pinarhaskiris/Programming-Studio-Project"/>
+
+            <ArchiveItem title="Commerce" description="This is an eBay-like e-commerce auction site that allows users to post auction listings, place bids on listings, comment on those listings and add listings to a 'watchlist'. Made to practice using Django models, migrations and user authentication."
+            tags={["HTML", "CSS", "Django"]} githubLink="https://github.com/pinarhaskiris/commerce-proj"/>
+
+            <ArchiveItem title="First Personal Website" description="First iteration of this website and the first project done using React.js."
+            tags={["HTML", "CSS", "React.js"]} githubLink="https://github.com/pinarhaskiris/personal-website"
+            liveLink="https://pinarhaskiris.github.io/personal-website/"/>
+
+          </div>
+
+         <a href="https://github.com/pinarhaskiris?tab=repositories" target="_blank">more on GitHub <BsBoxArrowUpRight style={{ paddingLeft: '10px' }} /></a>
+
+      </div>
+
       <div id="resume_container">
         <h1>Resume</h1>
         <div>
@@ -89,35 +116,13 @@ function App() {
         </div>
       </div>
 
-      <div id="archive_container">
-        <h1>Archive</h1>
-        <div className="archive_list">
-          <ArchiveItem title="cute-dark" description="A dark theme for VS Code. Made purely for fun."
-          githubLink="https://github.com/pinarhaskiris/cute-dark"
-          liveLink="https://marketplace.visualstudio.com/items?itemName=pinarhaskiris.cute-dark"/>
-
-          <ArchiveItem title="Text Decryptor" 
-          description="The grammar and regex rules used to generate and encrypt the text is known. The program decryptes the file by applying regex rules reversely and removing the sentences that can not be generated with the given grammar rules."
-          tags={["Java", "Automata Theory and Formal Languages"]} githubLink="https://github.com/pinarhaskiris/COMP321-Assignment"/>
-
-          <ArchiveItem title="Number Recognizer" description="This program takes an image as input, draws red rectangles around the numbers it recognizes and writes the recognized number on top of it. OpenCV was not used, calculations were done manually."
-          tags={["Python", "Computer Vision"]} githubLink="https://github.com/pinarhaskiris/Programming-Studio-Project"/>
-
-          <ArchiveItem title="Commerce" description="This is an eBay-like e-commerce auction site that allows users to post auction listings, place bids on listings, comment on those listings and add listings to a 'watchlist'. Made to practice using Django models, migrations and user authentication."
-          tags={["HTML", "CSS", "Django"]} githubLink="https://github.com/pinarhaskiris/commerce-proj"/>
-
-          <ArchiveItem title="First Personal Website" description="First iteration of this website and the first project done using React.js."
-          tags={["HTML", "CSS", "React.js"]} githubLink="https://github.com/pinarhaskiris/personal-website"
-          liveLink="https://pinarhaskiris.github.io/personal-website/"/>
-
-        </div>
-      </div>
-
       <div id="art_container">
         <h1>Art</h1>
         <div>
           <SimpleSlider />
         </div>
+
+        <a href="/files/thoughts.pdf" target="_blank">for more <BsBoxArrowUpRight style={{ paddingLeft: '10px' }} /> </a>
         
       </div>
 
