@@ -75,12 +75,8 @@ body.dark-mode {
         }
     }
 
-    .slick-slider button:before {
-        color: #999;
-    }
-
-    .slick-dots li button:before {
-        color: #999;
+    .react-carousel-responsive__control {
+        color: #999!important;
     }
 }
 
@@ -99,10 +95,9 @@ body.dark-mode {
     align-items: center;
     justify-content: center;
 
-    margin-top: 5vh;
-
     img {
-        width: 350px;
+        min-width: 340px;
+        width: 27vw;
     }
 
     div {
@@ -219,7 +214,7 @@ body.dark-mode {
     flex-wrap: wrap;
     justify-content: center;
 
-    margin-top: 60px;
+    margin-top: 20px;
     margin-left: 40px;
 }
 
@@ -307,7 +302,7 @@ body.dark-mode {
     
     div {
         margin: auto;
-        margin-bottom: 15px;
+        margin: 15px auto;
         font-size: 12px;
         width: 70vw;
 
@@ -322,12 +317,15 @@ body.dark-mode {
 
             h3 {
                 width: 100px;
+                padding: 0px 20px;
+                text-align: center;
             }
 
             p {
                 width: 400px;
                 text-align: justify;
                 padding: 5px 0px 5px 0px;
+                margin: 10px;
             }
 
             .tag_list {
@@ -335,7 +333,7 @@ body.dark-mode {
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
-                width: 300px;
+                width: 250px;
                 padding: 0px!important;
 
                 list-style: none;
@@ -374,6 +372,7 @@ body.dark-mode {
 
 }
 
+
 #art_container {
     display: flex;
     flex-direction: column;
@@ -383,10 +382,10 @@ body.dark-mode {
 
     div {
         width: 60vw;
-        min-width: 350px;
-        height: max-content;
+        min-width: 370px;
         outline: none;
-        margin-bottom: 30px;
+        margin-top: 10px;
+        margin-bottom: 5px;
 
         .art_item {
             display: flex!important;
@@ -394,15 +393,17 @@ body.dark-mode {
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-
-            height: 700px!important;
     
             img {
-                width: 320px;
+                min-width: 280px;
+                width: 30vw;
+                border-radius: 10px;
             }
             
             div {
-                width: 320px;
+                min-width: 280px;
+                width: 20vw;
+                padding: 40px 0px 40px 40px;
             }
 
         }
@@ -419,14 +420,13 @@ body.dark-mode {
 }
 
 // Slider
-.slick-dots li button:before {
-    font-size: 15px!important;
+.react-carousel-responsive__control {
+    color: #333!important;
+    background: none!important;
+    font-size: 28px!important;
+    padding: 10px;
 }
 
-.slick-slider button:before {
-    color: #333;
-    font-size: 20px;
-}
 #contact_container {
     display: flex;
     flex-direction: column;
