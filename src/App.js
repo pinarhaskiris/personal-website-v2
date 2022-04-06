@@ -73,7 +73,7 @@ function App() {
             description={["A front-end website for an email client that makes API calls to send and receive emails.",
             "Users can send, receive, archive and respond to emails."]}
             tags={["HTML", "CSS", "JavaScript", "API calls", "Django"]}
-            githubLink="https://github.com/pinarhaskiris/mail-proj"/>
+            githubLink="https://github.com/pinarhaskiris/cs50w/tree/main/mail"/>
 
         </div>
       </div>
@@ -94,7 +94,7 @@ function App() {
             tags={["Python", "Computer Vision"]} githubLink="https://github.com/pinarhaskiris/Programming-Studio-Project"/>
 
             <ArchiveItem title="Commerce" description="This is an eBay-like e-commerce auction site that allows users to post auction listings, place bids on listings, comment on those listings and add listings to a 'watchlist'. Made to practice using Django models, migrations and user authentication."
-            tags={["HTML", "CSS", "Django"]} githubLink="https://github.com/pinarhaskiris/commerce-proj"/>
+            tags={["HTML", "CSS", "Django"]} githubLink="https://github.com/pinarhaskiris/cs50w/tree/main/commerce"/>
 
             <ArchiveItem title="First Personal Website" description="First iteration of this website and the first project done using React.js."
             tags={["HTML", "CSS", "React.js"]} githubLink="https://github.com/pinarhaskiris/personal-website"
