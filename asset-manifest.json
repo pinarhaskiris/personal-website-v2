@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/personal-website-v2/static/css/main.63a874f5.css",
+    "main.js": "/personal-website-v2/static/js/main.2addc74e.js",
+    "static/js/787.86e442ec.chunk.js": "/personal-website-v2/static/js/787.86e442ec.chunk.js",
+    "static/media/art2.png": "/personal-website-v2/static/media/art2.79bbac5849221256a3a4.png",
+    "static/media/portrait.png": "/personal-website-v2/static/media/portrait.2d4276c136c15512a610.png",
+    "static/media/art1.png": "/personal-website-v2/static/media/art1.f91f6b94517378d2994a.png",
+    "static/media/email_client.png": "/personal-website-v2/static/media/email_client.175e99de29fa5a0671e3.png",
+    "static/media/senior_design_project.png": "/personal-website-v2/static/media/senior_design_project.5d6e02753224b1eafd2e.png",
+    "static/media/art.png": "/personal-website-v2/static/media/art.a9d470825d637b4a2dd4.png",
+    "static/media/archive.png": "/personal-website-v2/static/media/archive.2969fde351939fbd4e74.png",
+    "static/media/projects.png": "/personal-website-v2/static/media/projects.d359cb29286041f66ac3.png",
+    "static/media/contact.png": "/personal-website-v2/static/media/contact.cae1801c65649a64b7c2.png",
+    "static/media/resume.png": "/personal-website-v2/static/media/resume.24e2c983e9b611527f3f.png",
+    "static/media/resume_ss.png": "/personal-website-v2/static/media/resume_ss.c6848c80d9f4cfd3387d.png",
+    "static/media/art3.jpg": "/personal-website-v2/static/media/art3.b90f6219c8f01fdfc28e.jpg",
+    "static/media/art4.jpg": "/personal-website-v2/static/media/art4.86bd41df46f3a94c561e.jpg",
+    "static/media/annie.png": "/personal-website-v2/static/media/annie.d0127d7209c2ea160581.png",
+    "index.html": "/personal-website-v2/index.html",
+    "main.63a874f5.css.map": "/personal-website-v2/static/css/main.63a874f5.css.map",
+    "main.2addc74e.js.map": "/personal-website-v2/static/js/main.2addc74e.js.map",
+    "787.86e442ec.chunk.js.map": "/personal-website-v2/static/js/787.86e442ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63a874f5.css",
+    "static/js/main.2addc74e.js"
+  ]
+}
