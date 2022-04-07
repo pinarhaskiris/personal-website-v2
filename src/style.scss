@@ -78,6 +78,10 @@ body.dark-mode {
     .react-carousel-responsive__control {
         color: #999!important;
     }
+
+    #resume_container div img {
+        filter: brightness(60%);
+    }
 }
 
 
@@ -177,7 +181,7 @@ body.dark-mode {
     }
 
     div {
-        width: 350px;
+        width: 360px;
     }
 
     p {

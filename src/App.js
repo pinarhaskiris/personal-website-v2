@@ -39,7 +39,7 @@ function App() {
           <ul>
             <li>👩🏻‍💻 A 21-year-old computer engineering student from Istanbul. </li>
             <li>☺️ Interning at <a href="https://sociality.io" target="_blank">Sociality.io</a> as a front-end developer since August 2021.</li>
-            <li>🧠 Currently working on using deep learning models for hate-speech recognition for my senior design project.</li>
+            <li>🧠 Currently working on using deep learning models for hate-speech recognition as the second part of my senior design project.</li>
             <li>🎨 Interested in art and languages outside of engineering.</li>
           </ul>
         </div>
