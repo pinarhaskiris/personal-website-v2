@@ -111,7 +111,6 @@ function App() {
         <div>
           <img src={resume_ss} />
           <div className="links">
-            <a href="/files/Pınar_Haskırış_Resume.pdf" target="_blank">Open in new tab <BsBoxArrowUpRight style={{ paddingLeft: '10px' }} /></a>
             <a href="/files/Pınar_Haskırış_Resume.pdf" target="_blank" download>Download in PDF <BsDownload style={{ paddingLeft: '10px' }} /></a>
           </div>
         </div>
