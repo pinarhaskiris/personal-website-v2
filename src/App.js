@@ -1,9 +1,10 @@
-import React, {useState} from "react";
+import React, {useState, Fragment} from "react";
 
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
 import ArchiveItem from "./components/ArchiveItem";
 import Carousel from "./components/Carousel";
+import WorkExperience from "./components/WorkExperience";
 
 import annie from "./images/annie.png";
 import email_client from "./images/email_client.png";
@@ -38,42 +39,41 @@ function App() {
         <h1>Pınar Haskırış</h1>
           <ul>
             <li>👩🏻‍💻 A 21-year-old computer engineering student from Istanbul. </li>
-            <li>☺️ Interning at <a href="https://sociality.io" target="_blank">Sociality.io</a> as a front-end developer since August 2021.</li>
-            <li>🧠 Currently working on using deep learning models for hate-speech recognition as the second part of my senior design project.</li>
+            <li>☺️ Interning at <a href="https://www.artiwise.com/en/main-page/" target="_blank">Artiwise</a> since July 2022.</li>
             <li>🎨 Interested in art and languages outside of engineering.</li>
           </ul>
         </div>
       </div>
       <Navbar />
 
+      <div id='experience_container'>
+        <h1>Experience</h1>
+        <div className='experience_list'>
+          <WorkExperience duration='July 2022 - present'
+          title='Intern' place='Artiwise' description='Working on identifying UX problems, implementing their solutions and optimizing the performance of the application.'/>
+
+          <WorkExperience duration='August 2021 - May 2022' title='Frontend Developer Intern' place='Sociality.io'
+          description='Worked with an international team of developers, designers and marketing specialists. Implemented bug fixes and updates for existing projects while assisting in the development of new features.' />
+        </div>
+      </div>
+
       <div id="projects_container">
         <h1>Projects</h1>
         <div className="project_list">
         
           <Project img={ senior_design_project }
-            title="Senior Design Project I"
-            description={["Three machine learning algorithms (Naive Bayes, SVM, Random Forest) were used in hate-speech recognition.", 
-            "90% accuracy was obtained with SVM.",
-            "Steps included preparing the data, training the models and evaluating their results.",
-            "The second part of the project aims to use deep learning models to achieve higher accuracy."]}
-            tags={["Python", "Machine Learning", "Classification"]}
+            title="Hate-speech Recognizer"
+            description={<Fragment> <p>In Part I, implemented 3 machine learning algoritms. SVM gave the best accuracy result at approx. 90%.</p> <p>In Part II, implemented several deep learning models from the Hugging Face library. Used 4 pre-trained models, fine-tuned 2 of them and trained a text-classifier from scratch. Fine-tuned DistilBERT and trained DistilBERT Base Uncased performed the best.</p> </Fragment>}
+            tags="Python, NLTK, scikit-learn, pandas, NumPy, transformers, Hugging Face"
             githubLink="https://github.com/pinarhaskiris/hate-speech-recognizer"
           />
 
           <Project img={ annie }
             title="Annie"
-            description={["A front-end Named-Entity annotation tool. Build for annotating with Person, Location and Organization tags.", 
-            "Users can import the text as a .txt file, annotate using the tool and export the annotations with BIO tags included."]}
-            tags={["HTML", "CSS", "React.js"]}
+            description={<Fragment> <p>A named-entity annotation tool where users can import a .txt file, annotate it with person, location or organization tags and export the annotated version with BIO tags included. </p> </Fragment>}
+            tags="HTML, CSS, React.js, wink-tokenizer"
             githubLink="https://github.com/pinarhaskiris/annie"
             liveLink="https://pinarhaskiris.github.io/annie/"/>
-
-          <Project img={ email_client }
-            title="Mail Client"
-            description={["A front-end website for an email client that makes API calls to send and receive emails.",
-            "Users can send, receive, archive and respond to emails."]}
-            tags={["HTML", "CSS", "JavaScript", "API calls", "Django"]}
-            githubLink="https://github.com/pinarhaskiris/cs50w/tree/main/mail"/>
 
         </div>
       </div>
@@ -82,22 +82,22 @@ function App() {
           <h1>Other Notable Projects</h1>
           <div className="archive_list">
             <ArchiveItem title="cute-dark" description="A dark theme for VS Code. Made purely for fun."
-            tags={["VS Code", "Extension"]}
+            tags="VS Code, Extension"
             githubLink="https://github.com/pinarhaskiris/cute-dark"
             liveLink="https://marketplace.visualstudio.com/items?itemName=pinarhaskiris.cute-dark"/>
 
             <ArchiveItem title="Text Decryptor" 
             description="The grammar and regex rules used to generate and encrypt the text is known. The program decrypts the file by applying regex rules reversely and removing the sentences that can not be generated with the given grammar rules."
-            tags={["Java", "Automata Theory and Formal Languages"]} githubLink="https://github.com/pinarhaskiris/COMP321-Assignment"/>
+            tags="Java, Automata Theory and Formal Languages" githubLink="https://github.com/pinarhaskiris/COMP321-Assignment"/>
 
             <ArchiveItem title="Number Recognizer" description="This program takes an image as input, draws red rectangles around the numbers it recognizes and writes the recognized number on top of it. OpenCV was not used, calculations were done manually."
-            tags={["Python", "Computer Vision"]} githubLink="https://github.com/pinarhaskiris/Programming-Studio-Project"/>
+            tags="Python, Computer Vision" githubLink="https://github.com/pinarhaskiris/Programming-Studio-Project"/>
 
             <ArchiveItem title="Commerce" description="This is an eBay-like e-commerce auction site that allows users to post auction listings, place bids on listings, comment on those listings and add listings to a 'watchlist'. Made to practice using Django models, migrations and user authentication."
-            tags={["HTML", "CSS", "Django"]} githubLink="https://github.com/pinarhaskiris/cs50w/tree/main/commerce"/>
+            tags="HTML, CSS, Django" githubLink="https://github.com/pinarhaskiris/cs50w/tree/main/commerce"/>
 
             <ArchiveItem title="First Personal Website" description="First iteration of this website and the first project done using React.js."
-            tags={["HTML", "CSS", "React.js"]} githubLink="https://github.com/pinarhaskiris/personal-website"
+            tags="HTML, CSS, React.js" githubLink="https://github.com/pinarhaskiris/personal-website"
             liveLink="https://pinarhaskiris.github.io/personal-website/"/>
 
           </div>
@@ -110,9 +110,7 @@ function App() {
         <h1>Resume</h1>
         <div>
           <img src={resume_ss} />
-          <div className="links">
-            <a href="/files/Pınar_Haskırış_Resume.pdf" target="_blank" download>Download in PDF <BsDownload style={{ paddingLeft: '10px' }} /></a>
-          </div>
+          <a href="https://drive.google.com/file/d/16R8COy4ZoONT37BE-CqvXohQwtVwlm3_/view?usp=sharing" target="_blank">Open in new tab <BsBoxArrowUpRight style={{ paddingLeft: '10px' }} /></a>
         </div>
       </div>
 
@@ -129,7 +127,7 @@ function App() {
       <div id="contact_container">
       <h1>Contact</h1>
       <ul>
-        <li><BsGithub /> <a href="https://github.com/pinarhaskiris" target="_blank">GitHub <BsBoxArrowUpRight size={20} style={{ paddingLeft: '5px' }} /></a></li>
+        <li><BsGithub /> <a href="https://github.com/pinarhaskiris" target="_blank">GitHub <BsBoxArrowUpRight size={35} style={{ paddingLeft: '10px' }} /></a></li>
         <li><BsMailbox /> <a href="mailto: pinarhaskiris1900@gmail.com">pinarhaskiris1900@gmail.com</a></li>
       </ul>
       </div>
