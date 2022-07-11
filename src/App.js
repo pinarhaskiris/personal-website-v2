@@ -36,11 +36,13 @@ function App() {
       <div id="about_container">
         <img src={portrait}/>
         <div>
-        <h1>Pınar Haskırış</h1>
+        <h1>P<span>ı</span>nar Hask<span>ı</span>r<span>ış</span></h1>
           <ul>
-            <li>👩🏻‍💻 A 21-year-old computer engineering student from Istanbul. </li>
-            <li>☺️ Interning at <a href="https://www.artiwise.com/en/main-page/" target="_blank">Artiwise</a> since July 2022.</li>
-            <li>🎨 Interested in art and languages outside of engineering.</li>
+            <li>👩🏻‍💻 A 21-year-old computer engineering student from Istanbul, Turkey. </li>
+            <li>🎓 Will be graduating this year.</li>
+            <li>☺️ Interning as a frontend developer at <a href="https://www.artiwise.com/en/main-page/" target="_blank">Artiwise</a> since July 2022.</li>
+            <li>🧠 Interested in natural language processing and web development.</li>
+            <li>🎨 Drawing faces and learning Spanish as a hobby.</li>
           </ul>
         </div>
       </div>
@@ -96,9 +98,8 @@ function App() {
             <ArchiveItem title="Commerce" description="This is an eBay-like e-commerce auction site that allows users to post auction listings, place bids on listings, comment on those listings and add listings to a 'watchlist'. Made to practice using Django models, migrations and user authentication."
             tags="HTML, CSS, Django" githubLink="https://github.com/pinarhaskiris/cs50w/tree/main/commerce"/>
 
-            <ArchiveItem title="First Personal Website" description="First iteration of this website and the first project done using React.js."
-            tags="HTML, CSS, React.js" githubLink="https://github.com/pinarhaskiris/personal-website"
-            liveLink="https://pinarhaskiris.github.io/personal-website/"/>
+            <ArchiveItem title="Mail Service" description="A frontend website for an email client that makes API calls to send and receive emails."
+            tags="HTML, CSS, JavaScript, Django" githubLink="https://github.com/pinarhaskiris/cs50w/tree/main/mail"/>
 
           </div>
 

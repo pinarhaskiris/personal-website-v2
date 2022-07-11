@@ -1,18 +1,31 @@
 @import url("https://use.typekit.net/tiu7bic.css");
 
 // font-sizes
-$regular_text: 2.5vw;
-$subtitle: 4vw;
-$section_title: 6vw;
-$sub_text: 2vw;
+$regular_text: 18px;
+$subtitle: 30px;
+$section_title: 38px;
+$sub_text: 14px;
 
 // colors
 $gray: #ababab;
 $primary: rgb(22, 22, 22);
 
+$min_width: 330px;
+
 body {
     font-family: mundial, sans-serif;
     font-weight: 200;
+    font-style: normal;
+}
+
+::-moz-selection { /* Code for Firefox */
+    background: rgb(74, 233, 182);
+    color: #fff;
+}
+  
+::selection {
+    background: rgb(74, 233, 182);
+    color: #fff;
 }
 
 @mixin tag {
@@ -32,7 +45,7 @@ body {
         content: "";
         position: absolute;
         width: 0;
-        height: 7px;
+        height: 3px;
         border-radius: 25px;
         bottom: 0;
         left: 0;
@@ -55,39 +68,39 @@ body.light-mode {
 
 body.dark-mode {
     background-color: #1a1919;
-    color: #999;
+    color: $gray;
 
     a {
-        color: #999!important;
+        color: $gray!important;
         &:before {
-            background-color: #999!important;
+            background-color: $gray!important;
         }
     }
 
     svg {
-        color: #999;
+        color: $gray;
     }
 
     .links {
         a {
-            color: #999!important;
-            border-color: #999!important;
+            color: $gray!important;
+            border-color: $gray!important;
             background-color: transparent!important;
 
             &:hover {
-                background-color: #999!important;
-                color: #333!important;
-                border-color: #333!important;
+                background-color: $gray!important;
+                color: $primary!important;
+                border-color: $primary!important;
 
                 svg {
-                    fill: #000;
+                    fill: $primary;
                 }
             }
         }
     }
 
     .react-carousel-responsive__control {
-        color: #999!important;
+        color: $gray!important;
     }
 
     #resume_container div img {
@@ -97,9 +110,10 @@ body.dark-mode {
 
 #dark_mode_toggle_btn {
     margin-top: 10vh;
-    width: 80vw;
+    width: 95vw;
     height: 50px;
     text-align: end;
+    scale: 0.75;
 }
 
 #about_container {
@@ -117,11 +131,18 @@ body.dark-mode {
     div {
         margin-left: 30px;
         margin-top: 30px;
-        width: 25%;
+        width: 30%;
+        min-width: $min_width;
 
         h1 {
-            font-size: 4vw;
+            font-size: $subtitle;
+            font-weight: 600;
             margin: 0;
+
+            span {
+                font-size: $subtitle/1.1;
+                font-weight: 600;
+            }
         }
 
         ul {
@@ -129,12 +150,10 @@ body.dark-mode {
             padding: 0;
     
             li {
-                font-size: 2.5vw;
-                font-weight: 300;
-                padding: 5px;
+                font-size: $regular_text;
+                padding: 7px;
 
                 a {
-                    font-weight: 600;
                     text-decoration: none;
                     color: #333;
                 }
@@ -173,6 +192,7 @@ body.dark-mode {
     img {
         width: 17vw;
         margin-right: 50px;
+        min-width: $min_width;
     }
 
     h2 {
@@ -183,7 +203,7 @@ body.dark-mode {
             position: relative;
             padding: 3px;
             top: 2px;
-            margin-left: 10px;
+            margin-left: 5px;
             @include link;
 
             &:first-of-type {
@@ -191,8 +211,8 @@ body.dark-mode {
             }
 
             svg {
-                width: 40px;
-                height: 40px;
+                width: 20px;
+                height: 20px;
             }
 
         }
@@ -200,6 +220,7 @@ body.dark-mode {
     
     .content {
         width: 40%;
+        min-width: $min_width;
     }
 
     .description {
@@ -224,22 +245,23 @@ body.dark-mode {
 
     margin-bottom: 75px;
     width: 40%;
+    min-width: $min_width;
 
     &_main {
         font-size: $subtitle;
         font-weight: 600;
-        padding: 10px;
+        padding: 5px;
     }
 
     &_duration {
         font-size: $regular_text;
-        padding: 10px;
+        padding: 5px;
         color: $gray;
     }
 
     &_description {
         font-size: $regular_text;
-        padding: 10px;
+        padding: 5px;
     }
 }
 
@@ -254,7 +276,7 @@ body.dark-mode {
 }
 
 .navItem {
-    padding: 3vw; 
+    padding: 3%; 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -268,7 +290,7 @@ body.dark-mode {
     a {
         right: 20px;
         position: relative;
-        font-size: 4.5vw;
+        font-size: $subtitle;
         font-weight: 600;
         color: #333;
         text-decoration: none;
@@ -291,7 +313,7 @@ body.dark-mode {
         margin-top: 75px; 
     
         img {
-            min-width: 350px;
+            min-width: $min_width;
             width: 60vw;
             border-radius: 10px;
         }
@@ -300,7 +322,6 @@ body.dark-mode {
             @include link;
             padding-bottom: 20px;
             font-size: $regular_text;
-            font-weight: 500;
             position: relative;
             text-decoration: none;
             color: $primary;
@@ -310,7 +331,7 @@ body.dark-mode {
             padding-top: 20px;
 
             svg {
-                padding: 5px;
+                padding: 5px 5px 0px 0px;
             }
             
         }
@@ -326,7 +347,7 @@ body.dark-mode {
     h1 {
         padding-top: 10vh;
         width: 30%;
-        line-height: $section_title/1.75;
+        min-width: $min_width;
         margin: auto auto 75px auto;
         font-size: $section_title;
     }
@@ -335,8 +356,13 @@ body.dark-mode {
         margin: auto;
         font-size: $regular_text;
         width: 80vw;
-        margin-bottom: 30px;
 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
         .archive_item {
             display: flex;
             flex-direction: row;
@@ -347,32 +373,35 @@ body.dark-mode {
             border-bottom: 2px solid #333;
 
             h3 {
-                width: 10%;
-                line-height: $regular_text/1.5;
                 padding: 0px 20px;
                 text-align: left;
                 font-size: $regular_text;
+                width: 15%;
+                min-width: 100px;
             }
 
             p {
-                width: 50%;
                 text-align: justify;
-                margin-left: 4%;
+                line-height: $regular_text * 1.25;
+                width: 40%;
+                min-width: $min_width;
             }
 
             .tags {
-                width: 12%;
-                margin-left: 6%;
                 font-size: $sub_text;
+                padding-left: 0;
                 color: $gray;
                 font-style: italic;
                 text-align: left;
+                width: 15%;
+                min-width: 150px;
+                padding: 3%;
 
             }
 
             div {
-                width: 12%;
                 margin: 0px;
+                width: 100px;
                 a {
                     padding: 5px 0px;
                     color: #333;
@@ -381,6 +410,10 @@ body.dark-mode {
                     @include link;
                 }
 
+            }
+
+            &:last-child {
+                margin-bottom: 30px;
             }
         }
     }
@@ -394,7 +427,7 @@ body.dark-mode {
         color: $primary;
 
         svg {
-            padding: 0px 20px 0px 20px;
+            padding: 0px 5px 0px 5px;
         }
 
         @include link;
@@ -414,8 +447,8 @@ body.dark-mode {
     }
 
     div {
-        width: 60vw;
-        min-width: 370px;
+        width: 50vw;
+        min-width: $min_width;
         outline: none;
         margin-top: 10px;
         margin-bottom: 5px;
@@ -428,8 +461,8 @@ body.dark-mode {
             justify-content: center;
     
             img {
-                min-width: 280px;
-                width: 50vw;
+                min-width: $min_width;
+                width: 40vw;
                 border-radius: 10px;
             }
 
@@ -458,7 +491,7 @@ body.dark-mode {
 }
 
 .react-carousel-responsive__controlPrev, .react-carousel-responsive__controlNext {
-    font-size: 75px !important;
+    font-size: 35px !important;
 }
 
 #contact_container {
@@ -480,13 +513,18 @@ body.dark-mode {
             margin: 10px;
             display: flex;
             align-items: center;
-            font-size: $subtitle;
+            font-size: 20px;
 
             a {
                 text-decoration: none;
-                padding: 20px;
+                padding: 5px;
                 color: #333;
                 position: relative;
+
+                svg {
+                    width: 24px;
+                    height: 24px;
+                }
 
                 @include link;
             }

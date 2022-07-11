@@ -14,8 +14,8 @@ const ArchiveItem = ({ title, description, tags = [], githubLink, liveLink }) =>
                 { tags }
             </ul>
             <div>
-                <Tooltip title={<h1 style={{ margin: "5px" }}>Github</h1>} arrow placement="top">{<a href={ githubLink } target="_blank"><BsGithub size={40}/></a>}</Tooltip>
-                {liveLink ? <Tooltip arrow title={<h1 style={{ margin: "5px" }}>Live</h1>} placement="top">{<a href={ liveLink } target="_blank"><BsGlobe size={40} /></a>}</Tooltip>: null}
+                <Tooltip title='Github' arrow placement="top">{<a href={ githubLink } target="_blank"><BsGithub size={25}/></a>}</Tooltip>
+                {liveLink ? <Tooltip arrow title='Live' placement="top">{<a href={ liveLink } target="_blank"><BsGlobe size={25} /></a>}</Tooltip>: null}
             </div>
         </div>
     )
