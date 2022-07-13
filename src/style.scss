@@ -320,7 +320,7 @@ body.dark-mode {
     
         a {
             @include link;
-            padding-bottom: 20px;
+            padding-bottom: 10px;
             font-size: $regular_text;
             position: relative;
             text-decoration: none;
@@ -420,7 +420,7 @@ body.dark-mode {
 
     a {
         text-decoration: none;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         position: relative;
         font-size: $regular_text;
         text-decoration: none;
@@ -471,7 +471,7 @@ body.dark-mode {
 
     a {
         text-decoration: none;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         font-size: $regular_text;
         font-weight: 500;
         color: $primary;
