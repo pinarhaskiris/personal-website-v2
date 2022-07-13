@@ -40,7 +40,7 @@ function App() {
           <ul>
             <li>👩🏻‍💻 A 21-year-old computer engineering student from Istanbul, Turkey. </li>
             <li>🎓 Will be graduating this year.</li>
-            <li>☺️ Interning as a frontend developer at <a href="https://www.artiwise.com/en/main-page/" target="_blank">Artiwise</a> since July 2022.</li>
+            <li>☺️ Interning as a frontend developer at <a href="https://www.artiwise.com/en/main-page/" target="_blank">Artiwise</a> since June 2022.</li>
             <li>🧠 Interested in natural language processing and web development.</li>
             <li>🎨 Drawing faces and learning Spanish as a hobby.</li>
           </ul>
@@ -65,9 +65,9 @@ function App() {
         
           <Project img={ senior_design_project }
             title="Hate-speech Recognizer"
-            description={<Fragment> <p>In Part I, implemented 3 machine learning algoritms. SVM gave the best accuracy result at approx. 90%.</p> <p>In Part II, implemented several deep learning models from the Hugging Face library. Used 4 pre-trained models, fine-tuned 2 of them and trained a text-classifier from scratch. Fine-tuned DistilBERT and trained DistilBERT Base Uncased performed the best.</p> </Fragment>}
+            description={<Fragment> <p>In Part I, implemented 3 machine learning algorithms. SVM gave the best accuracy result at approx. 90%.</p> <p>In Part II, implemented several deep learning models from the Hugging Face library. Used 4 pre-trained models, fine-tuned 2 of them and trained a text-classifier from scratch. Fine-tuned DistilBERT and trained DistilBERT Base Uncased performed the best.</p> </Fragment>}
             tags="Python, NLTK, scikit-learn, pandas, NumPy, transformers, Hugging Face"
-            githubLink="https://github.com/pinarhaskiris/hate-speech-recognizer"
+            githubLink="https://github.com/pinarhaskiris/hate-speech-recognizer-dl"
           />
 
           <Project img={ annie }
@@ -111,7 +111,7 @@ function App() {
         <h1>Resume</h1>
         <div>
           <img src={resume_ss} />
-          <a href="https://drive.google.com/file/d/16R8COy4ZoONT37BE-CqvXohQwtVwlm3_/view?usp=sharing" target="_blank">Open in new tab <BsBoxArrowUpRight style={{ paddingLeft: '10px' }} /></a>
+          <a href="https://drive.google.com/file/d/1JimAZJ7USvAvffMD2HincmjWXCT9tCR-/view?usp=sharing" target="_blank">Open in new tab <BsBoxArrowUpRight style={{ paddingLeft: '10px' }} /></a>
         </div>
       </div>
 
@@ -125,7 +125,7 @@ function App() {
         
       </div>
 
-      <div id="contact_container">
+    <div id="contact_container">
       <h1>Contact</h1>
       <ul>
         <li><BsGithub /> <a href="https://github.com/pinarhaskiris" target="_blank">GitHub <BsBoxArrowUpRight size={35} style={{ paddingLeft: '10px' }} /></a></li>
