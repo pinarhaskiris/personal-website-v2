@@ -51,7 +51,7 @@ function App() {
       <div id='experience_container'>
         <h1>Experience</h1>
         <div className='experience_list'>
-          <WorkExperience duration='July 2022 - present'
+          <WorkExperience duration='June 2022 - present'
           title='Intern' place='Artiwise' description='Working on identifying UX problems, implementing their solutions and optimizing the performance of the application.'/>
 
           <WorkExperience duration='August 2021 - May 2022' title='Frontend Developer Intern' place='Sociality.io'
