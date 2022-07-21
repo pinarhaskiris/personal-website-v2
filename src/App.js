@@ -38,9 +38,8 @@ function App() {
         <div>
         <h1>P<span>ı</span>nar Hask<span>ı</span>r<span>ış</span></h1>
           <ul>
-            <li>👩🏻‍💻 A 21-year-old computer engineering student from Istanbul, Turkey. </li>
+            <li>👩🏻‍💻 A 22-year-old computer engineering student from Istanbul, Turkey. </li>
             <li>🎓 Will be graduating this year.</li>
-            <li>☺️ Interning as a frontend developer at <a href="https://www.artiwise.com/en/main-page/" target="_blank">Artiwise</a> since June 2022.</li>
             <li>🧠 Interested in natural language processing and web development.</li>
             <li>🎨 Drawing faces and learning Spanish as a hobby.</li>
           </ul>
@@ -51,10 +50,10 @@ function App() {
       <div id='experience_container'>
         <h1>Experience</h1>
         <div className='experience_list'>
-          <WorkExperience duration='June 2022 - present'
-          title='Intern' place='Artiwise' description='Working on identifying UX problems, implementing their solutions and optimizing the performance of the application.'/>
+          <WorkExperience duration='June 2022 - July 2022'
+          title='Intern' place='Artiwise' description='Worked on identifying UX problems, implementing their solutions and optimizing the performance of the application.'/>
 
-          <WorkExperience duration='August 2021 - May 2022' title='Frontend Developer Intern' place='Sociality.io'
+          <WorkExperience duration='August 2021 - May 2022' title='Front-end Developer Intern' place='Sociality.io'
           description='Worked with an international team of developers, designers and marketing specialists. Implemented bug fixes and updates for existing projects while assisting in the development of new features.' />
         </div>
       </div>
@@ -111,7 +110,7 @@ function App() {
         <h1>Resume</h1>
         <div>
           <img src={resume_ss} />
-          <a href="https://drive.google.com/file/d/1JimAZJ7USvAvffMD2HincmjWXCT9tCR-/view?usp=sharing" target="_blank">Open in new tab <BsBoxArrowUpRight style={{ paddingLeft: '10px' }} /></a>
+          <a href="https://drive.google.com/file/d/17Jy52NJDG1haslebFc7QPNmr0iU1bt_E/view?usp=sharing" target="_blank">Open in new tab <BsBoxArrowUpRight style={{ paddingLeft: '10px' }} /></a>
         </div>
       </div>
 
